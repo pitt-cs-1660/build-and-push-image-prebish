@@ -8,8 +8,8 @@ jobs:
   build-and-push-to-gcr:
     runs-on: ubuntu-22.04
     permissions:
-      contents: read
-      id-token: write
+      contents: 'read'
+      id-token: 'write'
     steps:
       - uses: actions/checkout@v4
 
