@@ -20,7 +20,7 @@ jobs:
         name: Authenticate to GCP
         with:
           project_id: 'assignment3-4406' # update with your project ID
-          workload_identity_provider: 'projects/155904275752/locations/global/workloadIdentityPools/github2/providers/GitHub'
+          workload_identity_provider: 'projects/155920477522/locations/global/workloadIdentityPools/assignment3-pool/providers/github'
           # workload_identity_provider: 'projects//locations/global/workloadIdentityPools/assignment3-pool/providers/GitHub'
 
       # configure/login with docker
