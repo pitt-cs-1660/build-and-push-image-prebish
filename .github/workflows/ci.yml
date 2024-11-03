@@ -22,6 +22,7 @@ jobs:
           project_id: 'assignment3-4406' # update with your project ID
           workload_identity_provider: 'projects/155904275752/locations/global/workloadIdentityPools/assignment3-pool/providers/GitHub'
 
+
           # workload_identity_provider: 'projects//locations/global/workloadIdentityPools/assignment3-pool/attribute.repository/pitt-cs-1660/build-and-push-image-prebish' # update with your Workload Identity Pool
 
       # configure/login with docker
