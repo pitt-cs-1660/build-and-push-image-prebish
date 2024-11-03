@@ -27,18 +27,18 @@ jobs:
         run: gcloud auth configure-docker us-central1-docker.pkg.dev
 
       # setup docker buildx
-#      - name: Setup docker buildx
-#        uses: docker/setup-buildx-action@v3
-#        with:
-#          platforms: linux/amd64,linux/arm64
+      - name: Setup docker buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          platforms: linux/amd64,linux/arm64
 
-#      - name: Build and Push
-#        uses: docker/build-push-action@v6
-#        with:
-#          context: ./
-#          file: ./Dockerfile
-#          push: true
-#          tags: us-central1-docker.pkg.dev/cc-fall2024/dansc0de/node-demo:test # <- keep this end part
+      - name: Build and Push
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          file: ./Dockerfile
+          push: true
+          tags: us-central1-docker.pkg.dev/assignment3-440621/pitt-cs-1660/build-and-push-image-prebish/node-demo:test # <- keep this end part
 
 # @note: you can use regular docker commands instead of the shared action
 #      - name: Build and Push Without Buildx
