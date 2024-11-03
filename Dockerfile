@@ -12,6 +12,7 @@ RUN npm install --only=production
 COPY ./app/app.js .
 COPY ./app/views/ ./app/views
 
+# new command for push
 EXPOSE 5000
 
 ENTRYPOINT ["node", "app.js"]
