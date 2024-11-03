@@ -40,4 +40,10 @@ jobs:
           push: true
           tags: us-central1-docker.pkg.dev/build-push-image-440600/assignment3-repo/node-demo:test
 
-# new comment
+      - name: Print GitHub Context
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Ref: ${{ github.ref }}"
+
+
