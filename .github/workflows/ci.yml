@@ -21,7 +21,6 @@ jobs:
         with:
           project_id: 'assignment3-4406' # update with your project ID
           workload_identity_provider: 'https://iam.googleapis.com/projects/155920477522/locations/global/workloadIdentityPools/assignment3-pool/providers/github'
-          # workload_identity_provider: 'projects//locations/global/workloadIdentityPools/assignment3-pool/providers/GitHub'
 
       # configure/login with docker
       - name: gcloud Configure Docker
