@@ -18,7 +18,7 @@ jobs:
         with:
           project_id: 'assignment3-4406'
           workload_identity_provider: 'projects/155920477522/locations/global/workloadIdentityPools/assignment3-pool/providers/github'
-          service_account: 'assignment3-service-account@assignment3-4406.iam.gserviceaccount.com'
+          # service_account: 'assignment3-service-account@assignment3-4406.iam.gserviceaccount.com'
 
       - name: gcloud Configure Docker
         run: gcloud auth configure-docker us-central1-docker.pkg.dev
