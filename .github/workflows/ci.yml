@@ -42,8 +42,9 @@ jobs:
 
       - name: Print GitHub Context
         run: |
-          echo "Repository: ${{ github.repository }}"
-          echo "Actor: ${{ github.actor }}"
-          echo "Ref: ${{ github.ref }}"
+          echo "::set-output name=repository::${{ github.repository }}"
+          echo "::set-output name=actor::${{ github.actor }}"
+          echo "::set-output name=ref::${{ github.ref }}"
+
 
 
