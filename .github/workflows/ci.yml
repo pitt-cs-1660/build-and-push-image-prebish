@@ -19,8 +19,8 @@ jobs:
         id: auth
         name: Authenticate to GCP
         with:
-          project_id: 'assignment3-440621' # update with your project ID
-          workload_identity_provider: 'projects/1010836609062/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
+          project_id: 'cs1660-assignment03-440717' # update with your project ID
+          workload_identity_provider: 'projects/809129922188/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
 
       # configure/login with docker
       - name: gcloud Configure Docker
@@ -38,7 +38,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/assignment3-440621/pitt-cs-1660/build-and-push-image-prebish/node-demo:test # <- keep this end part
+          tags: us-central1-docker.pkg.dev/cs1660-assignment03-440717/pitt-cs-1660/build-and-push-image-prebish/node-demo:test # <- keep this end part
 
 # @note: you can use regular docker commands instead of the shared action
 #      - name: Build and Push Without Buildx
